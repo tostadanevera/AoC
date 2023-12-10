@@ -10,7 +10,6 @@ def calc(nums):
             aux.append(nums[i] - nums[i - 1])
         return nums[0] - calc(aux)
 
-
 for line in data:
     nums = list(map(int, line.split()))
     sum += calc(nums)
